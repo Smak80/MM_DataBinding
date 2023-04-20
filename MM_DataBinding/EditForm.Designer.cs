@@ -161,6 +161,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(419, 23);
             comboBox1.TabIndex = 9;
+            comboBox1.TextChanged += comboBox1_TextChanged;
             // 
             // button1
             // 

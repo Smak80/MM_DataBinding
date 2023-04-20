@@ -55,6 +55,10 @@ namespace MM_DataBinding
         public string Level { get => _level;
             set
             {
+                if (value.ToUpper() != "БАКАЛАВРИАТ"
+                    && value.ToUpper() != "МАГИСТРАТУРА"
+                    && value.ToUpper() != "СПЕЦИАЛИТЕТ"
+                   ) throw new Exception("Неверный уровень образования");
                 _level = value;
                 OnPropertyChanged(nameof(Level));
             }
@@ -65,6 +69,15 @@ namespace MM_DataBinding
         protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void CopyTo(Group grCopy)
+        {
+            grCopy.Num = Num;
+            grCopy.Year = Year;
+            grCopy.Spec = Spec;
+            grCopy.Department = Department;
+            grCopy.Level = Level;
         }
     }
 }

@@ -32,9 +32,9 @@
             dataGridView1 = new DataGridView();
             contextMenuStrip1 = new ContextMenuStrip(components);
             увеличитьГодНа1ToolStripMenuItem = new ToolStripMenuItem();
-            удалитьToolStripMenuItem = new ToolStripMenuItem();
             добавитьToolStripMenuItem = new ToolStripMenuItem();
             изменитьToolStripMenuItem = new ToolStripMenuItem();
+            удалитьToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             contextMenuStrip1.SuspendLayout();
             SuspendLayout();
@@ -66,12 +66,6 @@
             увеличитьГодНа1ToolStripMenuItem.Text = "Увеличить год на 1";
             увеличитьГодНа1ToolStripMenuItem.Click += увеличитьГодНа1ToolStripMenuItem_Click;
             // 
-            // удалитьToolStripMenuItem
-            // 
-            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            удалитьToolStripMenuItem.Size = new Size(180, 22);
-            удалитьToolStripMenuItem.Text = "Удалить";
-            // 
             // добавитьToolStripMenuItem
             // 
             добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
@@ -84,6 +78,13 @@
             изменитьToolStripMenuItem.Name = "изменитьToolStripMenuItem";
             изменитьToolStripMenuItem.Size = new Size(180, 22);
             изменитьToolStripMenuItem.Text = "Изменить...";
+            изменитьToolStripMenuItem.Click += изменитьToolStripMenuItem_Click;
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            удалитьToolStripMenuItem.Size = new Size(180, 22);
+            удалитьToolStripMenuItem.Text = "Удалить";
             // 
             // Form1
             // 
